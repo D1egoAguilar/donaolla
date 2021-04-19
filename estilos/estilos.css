@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+
+  list-style: none;
+  margin-right: 40px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.contenedor {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background: linear-gradient(rgba(84,93,220,.4), rgba(96,171,245,.5)), url(../imagenes/fondo.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+#contenedor-titulo-flex {
+  display: flex;
+  justify-content: center;
+  margin: 18vh 0;
+  max-width: 1920px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  margin: 0;
+}
+
+h2 {
+  font-size: 25px;
+  color: #fff;
+}
+
+.contenedor-titulo {
+  text-align: center;
+
+}
+.contenedor-titulo a, #sobre-nosotros a, #contacto input[type="submit"]{
+  font-size: 14px;
+  color: #fff;
+  background: #5cb8ff;
+  padding: 14px 24px;
+  display: inline-block;
+
+}
+
+p.logo {
+  color: #fff;
+  font-size: 20px
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+/* Seccion de sobrenosotros */
+
+h3 {
+  text-align: center;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+#sobre-nosotros .contenedor-sobrenosotros {
+  display: flex;
+  justify-content: space-around;
+}
+#sobre-nosotros .texto {
+  text-align: justify;
+  width: 42%
+
+}
+
+/* Seccion Nuestros Productos */
+
+button.owl-prev, button.owl-next {
+  font-size: 40px !important;
+}
+
+span {
+  color: #71bcfa;
+}
+
+/* Seccion porque comprar con nosotros */
+
+.contenedor-comprar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#por-que-comprar .item {
+  width: 28%;
+  text-align: center;
+}
+
+#por-que-comprar ul li {
+  list-style: none;
+}
+
+#por-que-comprar ul li:nth-child(2) {
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#por-que-comprar ul li:nth-child(3) {
+  line-height: 31px;
+}
+
+/* Seccion de contacto */
+
+#contacto form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 77%;
+  margin:auto;
+}
+
+input[type="text"], input[type="email"]{
+  width: 49%;
+  margin-bottom: 15px;
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid #5cb8ff;
+  font-size: 17px;
+}
+
+textarea{
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid #5cb8ff;
+  font-size: 17px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#contacto input[type="submit"]{
+  width: 166px;
+  margin:auto;
+}
+
+.contacto-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.contacto-info img {
+  width: 28;
+  vertical-align: middle;
+}
+
+footer {
+  background: #2F2F2F;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer .contenedor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#whatsapp {
+  position: fixed;
+  top: 80%;
+  right: 1%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#nuestros-productos {
+  padding: 90px 0;
+}
+
+#sobre-nosotros {
+  padding: 90px 0;
+}
+
+#por-que-comprar {
+  padding: 90px 0;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 800px) {
+
+.menu-icon {
+  height: 70px;
+  display: block;
+  float: right;
+  width: 70px;
+  margin-top: -6px;
+}
+
+
+header nav {
+  position: absolute;
+  top: 83px;
+  left: 0;
+  height: 175px;
+  background: #5cb8ff;
+  width: 100%;
+  display: none;
+}
+header nav ul {
+  flex-direction: column;
+}
+
+header nav ul li {
+  margin-bottom: 16px;
+}
+
+
+#sobre-nosotros .contenedor-sobrenosotros {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#sobre-nosotros .texto {
+    width: 100%;
+}
+
+.contenedor-comprar {
+
+    flex-direction: column;
+}
+#nuestros-productos img {
+    width: 100%;
+}
+#por-que-comprar .item {
+    width: 100%;
+}
+
+.item ul {
+  padding: 0;
+}
+h3 {
+
+    font-size: 43px;
+
+}
+.item {
+  width: 100%;
+}
+#contacto form {
+
+    width: 100%;
+
+    flex-direction: column;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+
+}
+contacto-info img {
+    width: 20%;
+    vertical-align: middle;
+    flex-direction: column;
+}
+
+}
